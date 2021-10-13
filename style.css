@@ -1,0 +1,41 @@
+.select {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 2px solid green;
+}
+
+.weatherBox {
+  display: flex;
+  margin: 80px auto;
+  width: 300px;
+  height: 450px;
+  flex-direction: column;
+  border-radius: 3px;
+  border: 2px solid green;
+}
+
+.cityName {
+  margin: 50px auto;
+  font-size: 40px;
+}
+
+.cityTemp {
+  margin: 30px auto;
+  font-size: 60px;
+}
+
+.cityWeather {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+.cityWeatherName {
+  font-size: 30px;
+}
+  
