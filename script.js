@@ -34,19 +34,48 @@
 // select.onchange = getWeather;
 
 
-var your_drink;
+// var your_drink;
 
-var reverse = function(s) {
-  return s.split('').reverse().join('')
+// var reverse = function(s) {
+//   return s.split('').reverse().join('')
+// }
+
+// var barista = {
+//   str1: 'ion',
+//   str2: reverse('rcne'),
+//   str3: 'ypt',
+//   request: function(preference) {
+//     console.log(preference + ' Secret word: ' + this.str2 + this.str3 + this.str2) 
+//   }
+// };
+
+// barista.request(your_drink)
+
+card = [
+  // '3♣', 
+  // // '3♦', 
+  // // '3♥', 
+  '3♠'
+]
+
+// let out = {
+//   '♣': 'clubs',
+//   '♦': 'diamonds',
+//   '♥': 'hearts',
+//   '♠': 'spades'
+// }
+
+
+function defineSuit(card) {
+  if (card[0].split('')[1] === '♣') {
+    console.log('clubs') 
+  } else if (card[0].split('')[1] === '♦') {
+    console.log('diamonds') 
+  } else if (card[0].split('')[1] === '♥') {
+    console.log('hearts') 
+  } else if (card[0].split('')[1] === '♠') {
+    console.log('spades') 
+  }
 }
 
-var barista = {
-  str1: 'ion',
-  str2: reverse('rcne'),
-  str3: 'ypt',
-  request: function(preference) {
-    console.log(preference + ' Secret word: ' + this.str2 + this.str3 + this.str2) 
-  }
-};
-
-barista.request(your_drink)
+defineSuit(card)
