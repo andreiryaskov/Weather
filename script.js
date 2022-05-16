@@ -66,16 +66,24 @@ card = [
 // }
 
 
-function defineSuit(card) {
-  if (card[0].split('')[1] === '♣') {
-    console.log('clubs') 
-  } else if (card[0].split('')[1] === '♦') {
-    console.log('diamonds') 
-  } else if (card[0].split('')[1] === '♥') {
-    console.log('hearts') 
-  } else if (card[0].split('')[1] === '♠') {
-    console.log('spades') 
-  }
+// function defineSuit(card) {
+//   for (let i = 0; i < card.length; i++) {
+//       if (card[i] === '♣') {
+//     return 'clubs'
+//   } else if (card[i] === '♦') {
+//     return 'diamonds'
+//   } else if (card[i] === '♥') {
+//     return 'hearts'
+//   }else if (card[i] === '♣') {
+//     return 'spades'
+//   }
+// }
+// }
+
+// defineSuit(card)
+
+const stringToNumber = function(str){
+  return parseInt(str, 10)
 }
 
-defineSuit(card)
+stringToNumber("1234")
