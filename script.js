@@ -82,8 +82,57 @@ card = [
 
 // defineSuit(card)
 
-const stringToNumber = function(str){
-  return parseInt(str, 10)
+// const stringToNumber = function(str){
+//   return parseInt(str, 10)
+// }
+
+// stringToNumber("1234")
+
+// function makeNegative(num) {
+//   // Code?
+// }
+
+// function toFreud(string) {
+
+//   // let res = []
+
+//   // let a = string.split(' ')
+  
+//   // for (let i = 0; i < a.length; i++) {
+//   //   res.push(a[i].replace(a[i], 'sex'))
+//   // }
+
+//   console.log(string.split(' ').map(i => i.replace(i, 'sex')).join(' '))
+
+
+
+//   // console.log(res.join(' '))
+//   }
+
+//  toFreud("You're becoming a true freudian expert")
+
+function sumOfDifferences(arr) {
+  let res = arr.sort((a, b)=>a-b).reverse()
+
+  if (res.length == 1) {
+    return 0;
+  } else if (res == []) {
+    return [];
+  }
+  let newArr = []
+  for (let i = 0; i < res.length - 1; i++) {
+    newArr[i] = res[i] - res[i + 1]
+  }
+  let sum = 0;
+      for (let i = 0; i < newArray.length; i++) {
+        sum += newArray[i];
+      }
+      // newArray.pop();
+      return sum;
+
+  console.log(newArr)
+  
+
 }
 
-stringToNumber("1234")
+sumOfDifferences([11, 20, 1, 5, 8, 6, 17])
