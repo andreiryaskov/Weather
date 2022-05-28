@@ -123,16 +123,32 @@ function sumOfDifferences(arr) {
   for (let i = 0; i < res.length - 1; i++) {
     newArr[i] = res[i] - res[i + 1]
   }
-  let sum = 0;
-      for (let i = 0; i < newArray.length; i++) {
-        sum += newArray[i];
-      }
-      // newArray.pop();
-      return sum;
-
-  console.log(newArr)
-  
 
 }
 
 sumOfDifferences([11, 20, 1, 5, 8, 6, 17])
+
+
+// function eachCons(array, n) {
+//   let res = [];
+  
+//   for(let i = 0; i < array.length; i++){
+//     res.push(array.slice(i,i + n));
+//   }
+  
+//   console.log(res.filter(e => e.length === n))
+// }
+
+// eachCons([3, 5, 8, 13], 2) //[[3,5], [5,8], [8,13]]
+
+
+// function between(a, b) {
+//   const array = []
+
+//   for (let i = a; i <= b; i++ ) {
+//     array.push(i)
+//   }
+//   return array
+// }
+
+// between(1, 55) //[1,2,3,4]
