@@ -111,22 +111,29 @@ card = [
 
 //  toFreud("You're becoming a true freudian expert")
 
-function sumOfDifferences(arr) {
-  let res = arr.sort((a, b)=>a-b).reverse()
+  
+// function sumOfDifferences(arr) {
+//   let res = arr.sort((a, b)=>a-b).reverse()
 
-  if (res.length == 1) {
-    return 0;
-  } else if (res == []) {
-    return [];
-  }
-  let newArr = []
-  for (let i = 0; i < res.length - 1; i++) {
-    newArr[i] = res[i] - res[i + 1]
-  }
+//   if (res.length == 1) {
+//     return 0;
+//   } else if (res == []) {
+//     return [];
+//   }
+//   let newArr = []
+//   for (let i = 0; i < res.length - 1; i++) {
+//     newArr[i] = res[i] - res[i + 1]
+//   }
 
-}
+//   let sum = 0
+//   for (let i = 0; i < newArr.length; i++) {
+//     sum += newArr[i]
+//   }
 
-sumOfDifferences([11, 20, 1, 5, 8, 6, 17])
+//   console.log(sum)
+
+// }
+// sumOfDifferences([11, 20, 1, 5, 8, 6, 17])
 
 
 // function eachCons(array, n) {
